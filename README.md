@@ -9,7 +9,7 @@ The whole system is comprised of an Android app (this repo) that serves
 as the front-end and a backend service that computes for the risk factor and serves to query the
 DRIVER platform data (https://github.com/jedld/roadsafe_service.git).
 
-The DRIVER platform is a service provided by the Philippine Department of Transportation and Communications
+The DRIVER platform is a service provided by the DOTr
 with the partnership of World Bank and Grab and other companies for reporting and
 exposing anonymized crash data. For more information on the DRIVER platfrom see here:
 
