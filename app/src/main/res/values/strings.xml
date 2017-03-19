@@ -11,4 +11,6 @@
     <string name="refresh">Refresh</string>
     <string name="select_mode">Please select a mode below to help us customize your experience</string>
     <string name="consider_time_of_day">Consider time of day</string>
+    <string name="no_internet_connect">Internet Connection not available</string>
+    <string name="track_current_location">Track current location</string>
 </resources>

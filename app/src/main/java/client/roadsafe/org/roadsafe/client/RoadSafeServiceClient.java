@@ -18,7 +18,7 @@ import okhttp3.OkHttpClient;
  */
 
 public class RoadSafeServiceClient {
-    private static final String API_URL = "https://roadhack.herokuapp.com";
+    private static final String API_URL = "https://localhost:3000";
     private static final String TAG = RoadSafeServiceClient.class.getName();
 
     private final OkHttpClient client;
@@ -53,7 +53,7 @@ public class RoadSafeServiceClient {
             e.printStackTrace();
         }
 
-        if (response.code() == 200) {
+        if (response!=null && response.code() == 200) {
             try {
                 JSONObject jsonResult =  new JSONObject(responseBody);
                 JSONArray incidentResults = jsonResult.getJSONArray("result");
@@ -98,17 +98,8 @@ public class RoadSafeServiceClient {
             e.printStackTrace();
         }
 
-        if (response.code() == 200) {
+        if (response!=null && response.code() == 200) {
             JSONObject jsonResult = null;
-//            {
-//                "fatal_risk_factor": 0,
-//                    "injury_risk_factor": 0.08333333333333333,
-//                    "property_risk_factor": 1.5,
-//                    "total": 19,
-//                    "fatal": 0,
-//                    "injury": 1,
-//                    "property": 18
-//            }
             try {
                 jsonResult = new JSONObject(responseBody);
 

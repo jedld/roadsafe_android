@@ -40,17 +40,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_walk_black_48dp"
             android:id="@+id/start_mode_pedestrian"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:text="@string/start_pedestrian"
             android:layout_width="match_parent"
             android:layout_height="100dp" />
         <Button
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_car_black_48dp"
             android:layout_marginTop="10dp"
             android:id="@+id/start_mode_motorist"
             android:text="@string/start_motorist"
             android:layout_width="match_parent"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:layout_height="100dp" />
     </LinearLayout>
 </RelativeLayout>
